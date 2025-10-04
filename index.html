@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aya Hany | Graphic Designer</title>
+  <title>Graphic Designer | Visual Artist</title>
+
+  <!-- Lightbox CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -15,29 +19,32 @@
 
     header {
       background: linear-gradient(135deg, #ff0099, #493240);
-      padding: 50px 20px;
+      padding: 80px 20px;
     }
 
     header h1 {
       margin: 0;
       font-size: 3em;
-      font-weight: bold;
+      font-weight: 900;
       letter-spacing: 2px;
+      color: #fff;
     }
 
     header p {
-      margin-top: 10px;
+      margin-top: 15px;
       font-size: 1.2em;
-      color: #f1f1f1;
+      font-weight: 500;
+      color: #ffd700;
+      letter-spacing: 1px;
     }
 
     #portfolio {
-      padding: 40px 20px;
+      padding: 50px 20px;
     }
 
     #portfolio h2 {
       font-size: 2em;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       color: #ff0099;
     }
 
@@ -48,16 +55,22 @@
       padding: 20px;
     }
 
-    .gallery img {
-      width: 100%;
+    .gallery a {
+      display: block;
       border-radius: 15px;
+      overflow: hidden;
       box-shadow: 0 4px 15px rgba(0,0,0,0.6);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .gallery img:hover {
+    .gallery a:hover {
       transform: scale(1.05);
       box-shadow: 0 8px 25px rgba(0,0,0,0.8);
+    }
+
+    .gallery img {
+      width: 100%;
+      display: block;
     }
 
     footer {
@@ -77,25 +90,39 @@
 <body>
 
   <header>
-    <h1>Aya Hany</h1>
-    <p>Graphic Designer | Creative Visual Artist</p>
+    <h1>Graphic Designer | Visual Artist</h1>
+    <p>Expert in Photo Manipulation & Social Media Branding</p>
   </header>
 
   <section id="portfolio">
     <h2>My Portfolio</h2>
     <div class="gallery">
-      <img src="frutilicous 1.jpg" alt="Frutilicous Design 1">
-      <img src="Fruitilcous Dates with Milk.jpg" alt="Frutilicous Dates With Milk">
-      <img src="Rental Car.jpg" alt="Rental Car Design">
-      <img src="Burger Design (1).jpg" alt="Burger Design">
-      <img src="Trippat.jpg" alt="Trippat Project">
-      <img src="Sweety Fatakt.jpg" alt="Sweety Fatakat Design">
+      <a href="frutilicous 1.jpg" data-lightbox="portfolio" data-title="Frutilicous Design 1">
+        <img src="frutilicous 1.jpg" alt="Frutilicous Design 1">
+      </a>
+      <a href="Fruitilcous Dates with Milk.jpg" data-lightbox="portfolio" data-title="Frutilicous Dates With Milk">
+        <img src="Fruitilcous Dates with Milk.jpg" alt="Frutilicous Dates With Milk">
+      </a>
+      <a href="Rental Car.jpg" data-lightbox="portfolio" data-title="Rental Car Design">
+        <img src="Rental Car.jpg" alt="Rental Car Design">
+      </a>
+      <a href="Burger Design (1).jpg" data-lightbox="portfolio" data-title="Burger Design">
+        <img src="Burger Design (1).jpg" alt="Burger Design">
+      </a>
+      <a href="Trippat.jpg" data-lightbox="portfolio" data-title="Trippat Project">
+        <img src="Trippat.jpg" alt="Trippat Project">
+      </a>
+      <a href="Sweety Fatakt.jpg" data-lightbox="portfolio" data-title="Sweety Fatakat Design">
+        <img src="Sweety Fatakt.jpg" alt="Sweety Fatakat Design">
+      </a>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Aya Hany | Contact me: <a href="mailto:aya.hany8598@gmail.com">aya.hany8598@gmail.com</a></p>
+    <p>© 2025 Graphic Designer | Contact: <a href="mailto:aya.hany8598@gmail.com">aya.hany8598@gmail.com</a></p>
   </footer>
 
+  <!-- Lightbox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
 </html>
