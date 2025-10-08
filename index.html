@@ -66,13 +66,14 @@
     .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px;margin-top:18px}
     figure.card{background:var(--surface);border-radius:12px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,0.6);cursor:pointer;transition:transform .28s ease, box-shadow .28s ease}
     figure.card:hover{transform:translateY(-8px);box-shadow:0 16px 40px rgba(0,0,0,0.7)}
-    figure.card img{
-  width:100%;
-  height:220px;
-  object-fit:cover;
-  display:block;
-  box-shadow:0 6px 20px rgba(0,0,0,0.5);
+   figure.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 6px 25px rgba(255, 102, 178, 0.6); /* ظل وردي */
 }
+
     figure.card figcaption{padding:12px 14px;font-weight:600;color:var(--muted);font-size:14px}
 
     /* modal */
@@ -174,7 +175,7 @@
       <p class="section-desc">Luxury perfume branding and product mockups for NOUVÉLLE.</p>
       <div class="gallery" id="gallery-nouvelle">
         <figure class="card" data-src="nouvelle-1.jpg"><img src="nouvelle-1.jpg" alt="NOUVÉLLE 1"><figcaption>NOUVÉLLE 1</figcaption></figure>
-        <figure class="card" data-src="nouvelle-2.jpg"><img src="nouvelle-2.jpg" alt="NOUVÉLLE 2"><figcaption>NOUVÉLLE MARÉE</figcaption></figure>
+        <figure class="card" data-src="nouvelle-2.jpg"><img src="nouvelle-2.jpg" alt="NOUVÉLLE 2"><figcaption>NOUVÉLLE 2</figcaption></figure>
         <figure class="card" data-src="nouvelle-3.jpg"><img src="nouvelle-3.jpg" alt="NOUVÉLLE 3"><figcaption>NOUVÉLLE 3</figcaption></figure>
       </div>
     </section>
