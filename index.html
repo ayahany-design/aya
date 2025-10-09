@@ -156,6 +156,8 @@ img:hover {
             <a class="btn secondary" href="#fruitilicious">Fruitilicious</a>
             <a class="btn secondary" href="#nouvelle">NOUVÉLLE</a>
             <a class="btn secondary" href="#ads">Ads</a
+            <a class="btn secondary" href="#Jawar">Jawar</a     
+                                                      
           </div>
         </div>
       </div>
@@ -190,53 +192,7 @@ img:hover {
         </figure>
       </div>
     </section>
-
-    <!-- JAWAR Project Section -->
-<section id="jawar-project" style="background-color: #000; color: #f5f5f5; text-align: center; padding: 80px 20px; font-family: 'Playfair Display', serif; overflow: hidden;">
-  <h1 style="font-size: 60px; letter-spacing: 8px; color: #d4af37; margin-bottom: 20px; animation: fadeInDown 1.5s ease;">
-    JAWAR
-  </h1>
-  <p style="font-size: 18px; color: #ccc; max-width: 700px; margin: 0 auto 60px; animation: fadeIn 2s ease;">
-    علامة مجوهرات فاخرة تُجسّد الأنوثة في أنقى صورها، حيث يلتقي البريق بالفخامة.
-  </p>
-
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; animation: fadeInUp 2s ease;">
-    <img src="Jawar1.jpg" alt="Jawar Jewelry 1" style="width: 320px; height: auto; border-radius: 12px; box-shadow: 0 0 25px rgba(212, 175, 55, 0.45); transition: transform 0.4s ease, box-shadow 0.4s ease;">
-    <img src="Jawar2.jpg" alt="Jawar Jewelry 2" style="width: 320px; height: auto; border-radius: 12px; box-shadow: 0 0 25px rgba(212, 175, 55, 0.45); transition: transform 0.4s ease, box-shadow 0.4s ease;">
-    <img src="Jawar3.jpg" alt="Jawar Jewelry 3" style="width: 320px; height: auto; border-radius: 12px; box-shadow: 0 0 25px rgba(212, 175, 55, 0.45); transition: transform 0.4s ease, box-shadow 0.4s ease;">
-  </div>
-
-  <script>
-    // حركة الصور عند مرور الماوس
-    document.querySelectorAll('#jawar-project img').forEach(img => {
-      img.addEventListener('mouseenter', () => {
-        img.style.transform = 'scale(1.05)';
-        img.style.boxShadow = '0 0 40px rgba(212, 175, 55, 0.6)';
-      });
-      img.addEventListener('mouseleave', () => {
-        img.style.transform = 'scale(1)';
-        img.style.boxShadow = '0 0 25px rgba(212, 175, 55, 0.45)';
-      });
-    });
-  </script>
-
-  <style>
-    /* تأثيرات دخول ناعمة */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
-</section>
-
+ 
     <!-- FRUITILICIOUS -->
     <section id="fruitilicious" class="container" style="margin-top:10px">
       <h3 class="section-title">Fruitilicious</h3>
@@ -274,6 +230,85 @@ img:hover {
       </div>
     </section>
 
+<!-- ===== JAWAR PROJECT SECTION ===== -->
+<section id="jawar" class="project-section">
+  <h2 class="project-title">JAWAR — Jewelry Branding Project</h2>
+  <p class="project-description">
+    A luxury jewelry branding project that captures elegance, sparkle, and timeless beauty.
+  </p>
+
+  <div class="project-gallery">
+    <a href="Jawar1.jpg" target="_blank">
+      <img src="Jawar1.jpg" alt="Jawar Jewelry 1" />
+    </a>
+    <a href="Jawar2.jpg" target="_blank">
+      <img src="Jawar2.jpg" alt="Jawar Jewelry 2" />
+    </a>
+    <a href="Jawar3.jpg" target="_blank">
+      <img src="Jawar3.jpg" alt="Jawar Jewelry 3" />
+    </a>
+  </div>
+
+  <a href="#top" class="project-button">View More Projects</a>
+</section>
+
+<!-- ===== CSS STYLE ===== -->
+<style>
+  .project-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+  }
+
+  .project-title {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .project-description {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 40px;
+  }
+
+  .project-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .project-gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .project-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 192, 203, 0.5);
+  }
+
+  .project-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 28px;
+    background-color: #ff80aa;
+    color: white;
+    font-weight: 500;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .project-button:hover {
+    background-color: #ff5f95;
+  }
+</style>
 
     <!-- ABOUT -->
     <section id="about" class="container">
