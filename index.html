@@ -276,6 +276,24 @@ img:hover {
   </div>
 </section>
 
+    /* إزالة الخلفية السوداء الثقيلة تحت النص */
+figure.card figcaption,
+figure.project-card figcaption {
+  background: rgba(0,0,0,0.2); /* شبه شفاف */
+  color: #fff; /* لون النص واضح */
+  padding: 12px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 0 0 12px 12px; /* يطابق حواف الصورة */
+  text-align: center;
+}
+
+/* لو عايزة الشادو يبان أكتر */
+figure.card img,
+figure.project-card img {
+  box-shadow: 0 25px 30px -10px rgba(255, 20, 147, 0.7); /* وردي غامق */
+}
+
     <!-- ABOUT -->
     <section id="about" class="container">
       <h3 class="section-title">About</h3>
