@@ -155,8 +155,8 @@ img:hover {
             <a class="btn secondary" href="#lumea">Luméa</a>
             <a class="btn secondary" href="#fruitilicious">Fruitilicious</a>
             <a class="btn secondary" href="#nouvelle">NOUVÉLLE</a>
-            <a class="btn secondary" href="#ads">Ads</a
-            <a class="btn secondary" href="#Jawar">Jawar</a   
+            <a class="btn secondary" href="#ads">Ads</a>
+            <a class="btn secondary" href="#Jawar">Jawar</a> 
           </div>
         </div>
       </div>
@@ -229,56 +229,67 @@ img:hover {
       </div>
     </section>
 
-<!-- ===== JAWAR PROJECT ===== -->
-<div class="project">
-  <h3 class="project-name jawar-title">JAWAR — Luxury Jewelry Branding</h3>
-  <p class="project-info">
-    A refined branding project celebrating elegance, glow, and modern femininity.
-  </p>
-  <div class="project-images">
-    <a href="Jawar1.jpg" target="_blank"><img src="Jawar1.jpg" alt="Jawar Jewelry 1"></a>
-    <a href="Jawar2.jpg" target="_blank"><img src="Jawar2.jpg" alt="Jawar Jewelry 2"></a>
-    <a href="Jawar3.jpg" target="_blank"><img src="Jawar3.jpg" alt="Jawar Jewelry 3"></a>
+    <!-- JAWAR Project Section -->
+<section id="jawar" class="project-section">
+  <div class="section-title">
+    <h2>JAWAR — Jewelry Branding Project</h2>
+    <p>A luxury jewelry project that reflects timeless elegance and femininity.</p>
   </div>
-</div>
 
-<!-- ===== STYLE ===== -->
-<style>
-  .jawar-title {
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-    background: linear-gradient(90deg, #d4af37, #f9e79f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
-  }
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="Jawar1.jpg" alt="Jawar Jewelry 1" class="gold-shadow" onclick="openModal(this)">
+    </div>
+    <div class="project-card">
+      <img src="Jawar2.jpg" alt="Jawar Jewelry 2" class="gold-shadow" onclick="openModal(this)">
+    </div>
+    <div class="project-card">
+      <img src="Jawar3.jpg" alt="Jawar Jewelry 3" class="gold-shadow" onclick="openModal(this)">
+    </div>
+  </div>
+</section>
 
-  .project-info {
-    color: #888;
-    font-size: 0.95rem;
-    margin-bottom: 25px;
-  }
+  /* --- JAWAR Project Section --- */
+#jawar {
+  background-color: #0b0b0b; /* خلفية سوداء فخمة */
+  color: #f5f5f5;
+  padding: 80px 0;
+  text-align: center;
+}
 
-  .project-images {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
+#jawar .section-title h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #d4af37; /* دهبي أنيق */
+  margin-bottom: 10px;
+}
 
-  .project-images img {
-    width: 290px;
-    border-radius: 14px;
-    transition: transform 0.3s ease, box-shadow 0.4s ease;
-    box-shadow: 0 4px 25px rgba(212, 175, 55, 0.3);
-  }
+#jawar .section-title p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 40px;
+}
 
-  .project-images img:hover {
-    transform: scale(1.06);
-    box-shadow: 0 8px 40px rgba(212, 175, 55, 0.6);
-  }
-</style>
+#jawar .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  width: 90%;
+  margin: auto;
+}
+
+.gold-shadow {
+  width: 100%;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.5);
+}
+
+.gold-shadow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.8);
+}
+
 
     <!-- ABOUT -->
     <section id="about" class="container">
