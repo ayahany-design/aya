@@ -156,8 +156,7 @@ img:hover {
             <a class="btn secondary" href="#fruitilicious">Fruitilicious</a>
             <a class="btn secondary" href="#nouvelle">NOUVÉLLE</a>
             <a class="btn secondary" href="#ads">Ads</a
-            <a class="btn secondary" href="#Jawar">Jawar</a     
-                                                      
+            <a class="btn secondary" href="#Jawar">Jawar</a   
           </div>
         </div>
       </div>
@@ -226,87 +225,58 @@ img:hover {
         <figure class="card" data-src="olive-oil-ads.jpeg"><img src="olive-oil-ads.jpeg" alt="Olive Oil Ads"><figcaption>Olive Oil Ads</figcaption></figure>
         <figure class="card" data-src="rental-car.jpg"><img src="rental-car.jpg" alt="Rental Car"><figcaption>Rental Car</figcaption></figure>
         <figure class="card" data-src="sweety-fatakt.jpg"><img src="sweety-fatakt.jpg" alt="Sweety Fatakt"><figcaption>Sweety Fatakt</figcaption></figure>
-        <figure class="card" data-src="Trippat-Company.jpg"><img src="trippat-Company.jpg" alt="Trippat Company"><figcaption>Trippat Company</figcaption></figure>
+        <figure class="card" data-src="trippat-company.jpg"><img src="trippat-company.jpg" alt="Trippat Company"><figcaption>Trippat Company</figcaption></figure>
       </div>
     </section>
 
-<!-- ===== JAWAR PROJECT SECTION ===== -->
-<section id="jawar" class="project-section">
-  <h2 class="project-title">JAWAR — Jewelry Branding Project</h2>
-  <p class="project-description">
-    A luxury jewelry branding project that captures elegance, sparkle, and timeless beauty.
+<!-- ===== JAWAR PROJECT ===== -->
+<div class="project">
+  <h3 class="project-name jawar-title">JAWAR — Luxury Jewelry Branding</h3>
+  <p class="project-info">
+    A refined branding project celebrating elegance, glow, and modern femininity.
   </p>
-
-  <div class="project-gallery">
-    <a href="Jawar1.jpg" target="_blank">
-      <img src="Jawar1.jpg" alt="Jawar Jewelry 1" />
-    </a>
-    <a href="Jawar2.jpg" target="_blank">
-      <img src="Jawar2.jpg" alt="Jawar Jewelry 2" />
-    </a>
-    <a href="Jawar3.jpg" target="_blank">
-      <img src="Jawar3.jpg" alt="Jawar Jewelry 3" />
-    </a>
+  <div class="project-images">
+    <a href="Jawar1.jpg" target="_blank"><img src="Jawar1.jpg" alt="Jawar Jewelry 1"></a>
+    <a href="Jawar2.jpg" target="_blank"><img src="Jawar2.jpg" alt="Jawar Jewelry 2"></a>
+    <a href="Jawar3.jpg" target="_blank"><img src="Jawar3.jpg" alt="Jawar Jewelry 3"></a>
   </div>
+</div>
 
-  <a href="#top" class="project-button">View More Projects</a>
-</section>
-
-<!-- ===== CSS STYLE ===== -->
+<!-- ===== STYLE ===== -->
 <style>
-  .project-section {
-    text-align: center;
-    padding: 80px 20px;
-    background-color: #f9f9f9;
-  }
-
-  .project-title {
-    font-size: 2.2rem;
-    letter-spacing: 2px;
+  .jawar-title {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
     margin-bottom: 10px;
-    color: #333;
+    background: linear-gradient(90deg, #d4af37, #f9e79f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
   }
 
-  .project-description {
-    font-size: 1rem;
-    color: #777;
-    margin-bottom: 40px;
+  .project-info {
+    color: #888;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
   }
 
-  .project-gallery {
+  .project-images {
     display: flex;
     justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
-    gap: 25px;
   }
 
-  .project-gallery img {
-    width: 300px;
-    height: auto;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+  .project-images img {
+    width: 290px;
+    border-radius: 14px;
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+    box-shadow: 0 4px 25px rgba(212, 175, 55, 0.3);
   }
 
-  .project-gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 25px rgba(255, 192, 203, 0.5);
-  }
-
-  .project-button {
-    display: inline-block;
-    margin-top: 40px;
-    padding: 12px 28px;
-    background-color: #ff80aa;
-    color: white;
-    font-weight: 500;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-
-  .project-button:hover {
-    background-color: #ff5f95;
+  .project-images img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 8px 40px rgba(212, 175, 55, 0.6);
   }
 </style>
 
