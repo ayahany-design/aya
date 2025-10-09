@@ -231,68 +231,50 @@ img:hover {
     </section>
 
   <!-- JAWAR Project Section -->
-<section id="jawar" class="project-section">
-  <div class="section-title">
-    <h3 class="section-title">JAWAR — Jewelry Branding Project</h3>
-    <p>A luxury jewelry project that reflects timeless elegance and femininity.</p>
+<section id="jawar-project" style="background-color: #000; color: #f5f5f5; text-align: center; padding: 80px 20px; font-family: 'Playfair Display', serif; overflow: hidden;">
+  <h1 style="font-size: 60px; letter-spacing: 8px; color: #d4af37; margin-bottom: 20px; animation: fadeInDown 1.5s ease;">
+    JAWAR
+  </h1>
+  <p style="font-size: 18px; color: #ccc; max-width: 700px; margin: 0 auto 60px; animation: fadeIn 2s ease;">
+    علامة مجوهرات فاخرة تُجسّد الأنوثة في أنقى صورها، حيث يلتقي البريق بالفخامة.
+  </p>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; animation: fadeInUp 2s ease;">
+    <img src="Jawar1.jpg" alt="Jawar Jewelry 1" style="width: 320px; height: auto; border-radius: 12px; box-shadow: 0 0 25px rgba(212, 175, 55, 0.45); transition: transform 0.4s ease, box-shadow 0.4s ease;">
+    <img src="Jawar2.jpg" alt="Jawar Jewelry 2" style="width: 320px; height: auto; border-radius: 12px; box-shadow: 0 0 25px rgba(212, 175, 55, 0.45); transition: transform 0.4s ease, box-shadow 0.4s ease;">
+    <img src="Jawar3.jpg" alt="Jawar Jewelry 3" style="width: 320px; height: auto; border-radius: 12px; box-shadow: 0 0 25px rgba(212, 175, 55, 0.45); transition: transform 0.4s ease, box-shadow 0.4s ease;">
   </div>
 
-  <div class="project-grid">
-    <figure class="project-card">
-      <img src="Jawar1.jpg" alt="Jawar Jewelry 1" class="gold-shadow">
-      <figcaption>Jawar Jewelry 1</figcaption>
-    </figure>
-    <figure class="project-card">
-      <img src="Jawar2.jpg" alt="Jawar Jewelry 2" class="gold-shadow">
-      <figcaption>Jawar Jewelry 2</figcaption>
-    </figure>
-    <figure class="project-card">
-      <img src="Jawar3.jpg" alt="Jawar Jewelry 3" class="gold-shadow">
-      <figcaption>Jawar Jewelry 3</figcaption>
-    </figure>
-  </div>
+  <script>
+    // حركة الصور عند مرور الماوس
+    document.querySelectorAll('#jawar-project img').forEach(img => {
+      img.addEventListener('mouseenter', () => {
+        img.style.transform = 'scale(1.05)';
+        img.style.boxShadow = '0 0 40px rgba(212, 175, 55, 0.6)';
+      });
+      img.addEventListener('mouseleave', () => {
+        img.style.transform = 'scale(1)';
+        img.style.boxShadow = '0 0 25px rgba(212, 175, 55, 0.45)';
+      });
+    });
+  </script>
+
+  <style>
+    /* تأثيرات دخول ناعمة */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </section>
-
-    <!-- JAWAR Project Section -->
-<section id="jawar" class="project-section">
-  <div class="section-title">
-    <h3 class="section-title">JAWAR — Jewelry Branding Project</h3>
-    <p>A luxury jewelry project that reflects timeless elegance and femininity.</p>
-  </div>
-
-  <div class="project-grid">
-    <figure class="project-card">
-      <img src="Jawar1.jpg" alt="Jawar Jewelry 1" class="gold-shadow">
-      <figcaption>Jawar Jewelry 1</figcaption>
-    </figure>
-    <figure class="project-card">
-      <img src="Jawar2.jpg" alt="Jawar Jewelry 2" class="gold-shadow">
-      <figcaption>Jawar Jewelry 2</figcaption>
-    </figure>
-    <figure class="project-card">
-      <img src="Jawar3.jpg" alt="Jawar Jewelry 3" class="gold-shadow">
-      <figcaption>Jawar Jewelry 3</figcaption>
-    </figure>
-  </div>
-</section>
-
-    /* إزالة الخلفية السوداء الثقيلة تحت النص */
-figure.card figcaption,
-figure.project-card figcaption {
-  background: rgba(0,0,0,0.2); /* شبه شفاف */
-  color: #fff; /* لون النص واضح */
-  padding: 12px 14px;
-  font-weight: 600;
-  font-size: 14px;
-  border-radius: 0 0 12px 12px; /* يطابق حواف الصورة */
-  text-align: center;
-}
-
-/* لو عايزة الشادو يبان أكتر */
-figure.card img,
-figure.project-card img {
-  box-shadow: 0 25px 30px -10px rgba(255, 20, 147, 0.7); /* وردي غامق */
-}
 
     <!-- ABOUT -->
     <section id="about" class="container">
